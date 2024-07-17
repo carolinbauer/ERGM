@@ -1,11 +1,15 @@
 remotes::install_github("paleolimbot/rbbt")
-
-
 remove(list=ls())
 setwd("C:/Users/Carol/OneDrive/Documents/Uni/SoSe24/Bachelorarbeit_ERGM/ERGM")
 library(statnet)
 library(igraph)
 library(dplyr)
+
+
+# load package
+library(sjPlot)
+library(sjmisc)
+library(sjlabelled)
 #### load the network object from the file ---------------------------
 network_it <- readRDS("network.RData")
 
@@ -21,6 +25,10 @@ current_values <- network::get.vertex.attribute(network_it, "lr")
 modified_values <- ifelse(current_values == "Inf", 5, current_values)
 network::set.vertex.attribute(network_it, "lr", modified_values)
 
+#Relevel party (set reference level to IND (by naming it AAA))
+party <- network::get.vertex.attribute(network_it, "party")
+party[which(party == "IND")] <- "AAA"
+network::set.vertex.attribute(network_it, "party_relevel", party)
 #####set sex=M to 1, sex = F to 0----
 # current_values <- network::get.vertex.attribute(network_it, "sex")
 # modified_values <- ifelse(current_values == "M", 1, 0)
@@ -73,14 +81,15 @@ rm(list=ls()[! ls() %in% c("igraph_it","network_it")])
 
 
 #### models ----------------------------------------
-ergmTerm?sender
-?nodal_attributes
-typeof(network::get.vertex.attribute(network_it, "sex"))
+
+
+load("workspacemodels.RData")
 
 ##### unweighted edges ====
 set.seed(123)
 m1 <- ergm(network_it ~ edges + mutual)
-plogis(coef(m2)[['edges']] + coef(m2)[['mutual']])
+gof_m1 <- gof(m1)
+gof_m1
 
 set.seed(123)
 m2 <- ergm(network_it ~ edges + mutual +
@@ -90,6 +99,7 @@ m2 <- ergm(network_it ~ edges + mutual +
        absdiff('nyears')
        )
 summary(m2)
+gof_m2 <- gof(m2)
 
 set.seed(123)
 m3 <- ergm(network_it ~ edges + mutual +
@@ -104,8 +114,7 @@ m3 <- ergm(network_it ~ edges + mutual +
            )
 
 summary(m3)
-
-
+gof_m3 <- gof(m3)
 
 set.seed(123)
 m4 <- ergm(network_it ~ edges + mutual +
@@ -121,29 +130,22 @@ m4 <- ergm(network_it ~ edges + mutual +
              nodeicov('nyears')
 )
 summary(m4)
+gof_m4 <- gof(m4)
+
+
 table(network_it %v% "party")
-m10 <- ergm(network_it ~ edges + nodeofactor('party', levels = -4))
-summary(m10)
-
 set.seed(123)
-m4 <- ergm(network_it ~ edges + mutual +
-             nodematch('party') + #effect of same party ties
-             nodematch('sex')+ #effect of same sex ties
-             absdiff('lr')+ #effect of distance on political scale
-             absdiff('nyears')+ #effect of seniority distance
-             nodeofactor('party')+ #effect of party of co-sponsor (sender)
-             nodeifactor('party')+ #effect of party of sponsor (receiver)
-             nodeofactor('sex')+ #effect of sex of co-sponsor (sender)
-             nodeifactor('sex')+
-             nodeocov('nyears')+ #effect of seniority of co-sponsor (sender)
-             nodeicov('nyears')
-)
-summary(m4)
+m5 <- ergm(network_it ~ edges + nodeofactor('party', levels = -4))
+summary(m5)
 
+gof_m5 <- gof(m5)
+plot(gof_m5)
+
+mcmc_diag_m5 <- mcmc.diagnostics(m5)
 
 #Reference variable in party: IND
 set.seed(123)
-m5 <- ergm(network_it ~ edges + mutual +
+m6 <- ergm(network_it ~ edges + mutual +
              nodematch('party') + #effect of same party ties
              nodematch('sex')+ #effect of same sex ties
              absdiff('lr')+ #effect of distance on political scale
@@ -157,11 +159,20 @@ m5 <- ergm(network_it ~ edges + mutual +
 )
 summary(m5)
 
+gof_m6 <- gof(m6)
+gof_m6
+par(mfrow = c(2, 3))
+plot(gof_m6)
+mcmc.diagnostics(m6)
+
+
+
+
 
 
 ##This doesn't work:
 set.seed(123)
-m5 <- ergm(network_it ~ edges + mutual +
+m7 <- ergm(network_it ~ edges + mutual +
              nodematch('party') + #effect of same party ties
              nodematch('sex')+ #effect of same sex ties
              absdiff('lr')+ #effect of distance on political scale
@@ -178,7 +189,7 @@ m5 <- ergm(network_it ~ edges + mutual +
 
 
 
-
+m
 summary(m1)
 m2 <- ergm(network_it ~ edges + mutual + 
              nodematch('party') +  #effect of same party ties
@@ -200,7 +211,6 @@ summary(m3)
 #set Node colors according to paryname
 #convert to igraph object
 igraph_it <- intergraph::asIgraph(network_it)
-
 partynames <- levels(as.factor(vertex_attr(igraph_it, "party")))
 colors <- c("blue1", #Forza Italia, FI-PDL
             "deeppink", #Futuro e Libertà per l'Italia, FLI-TP
@@ -215,7 +225,6 @@ colors <- adjustcolor(colors, alpha = 0.6)
 color_mapping <- setNames(colors[1:length(partynames)], partynames)
 V(igraph_it)$color <- color_mapping[V(igraph_it)$party]
 
-par(mfrow = c(1,1))
 set.seed(240)
 plot(igraph_it,
      vertex.label = NA,
