@@ -175,6 +175,7 @@ df$edges %>%
 
 
 
+
 #same party:
 df$edges %>%
   mutate(same_party = ifelse(source_party == target_party, T, F))%>%
@@ -230,27 +231,88 @@ df$edges%>%
   arrange(source_agegroup)
 
 
+# 25-40
+# 40-50
+# 50-60
+# 60-70
+# 70-85
+
+
+
+#### Plots ------
+#set Node colors according to paryname
+#convert to igraph object
+partynames <- levels(as.factor(vertex_attr(igraph_it, "party")))
+colors <- c("blue1", #Forza Italia, FI-PDL
+            "deeppink", #Futuro e Libertà per l'Italia, FLI-TP
+            "yellow", #Italia dei Vlaori
+            "grey", #mixed group, IND
+            "darkgreen", #Lega Nord, LN
+            "orange", #Partito Democratico, PD
+            "red", #Popolo e Territorio, PT
+            "cyan" #Unione di Centro, terzo Polo, UDC-TP
+)
+colors <- adjustcolor(colors, alpha = 0.6)
+color_mapping <- setNames(colors[1:length(partynames)], partynames)
+V(igraph_it)$color <- color_mapping[V(igraph_it)$party]
+
+set.seed(240)
+plot(igraph_it,
+     vertex.label = NA,
+     vertex.size = 7,
+     edge.arrow.size = 0.01,
+     layout=layout_in_circle(igraph_it))
+
+set.seed(240)
+plot(igraph_it,
+     vertex.label = NA,
+     vertex.size = 7,
+     edge.arrow.size = 0.01,
+     layout=layout_nicely(igraph_it))
+
+set.seed(240)
+plot(igraph_it,
+     vertex.label = NA,
+     vertex.size = 7,
+     edge.arrow.size = 0.01,
+     layout=layout.fruchterman.reingold)
+
+#add legend:
+legend(#x=1.2, y=0,   # Coordinates (x also accepts keywords)
+  "bottomright",
+  legend = levels(factor(V(igraph_it)$party)), # Vector with the name of each group
+  fill = colors,   # Creates boxes in the legend with the specified colors
+  col = par("col"), # Color of lines or symbols
+  border = "black", # Fill box border color
+  #       lty, lwd,         # Line type and width
+  #       pch,              # Add pch symbols to legend lines or boxes
+  bty = "o",        # Box type (bty = "n" removes the box)
+  bg = par("bg"),    # Background color of the legend
+  box.lwd = par("lwd"), # Legend box line width
+  box.lty = par("lty"), # Legend box line type
+  box.col = par("fg"),  # Legend box line color
+  cex = 1,          # Legend size
+  horiz = FALSE,     # Horizontal (TRUE) or vertical (FALSE) legend
+  title = NULL      # Legend title
+)
 
 
 
 
-25-40
-40-50
-50-60
-60-70
-70-85
 
-###### Number of vertexes ----
-
-
-
+### In and Out Degree----
+network::set.edge.value(network_it, "Weight") <- network::get.edge.attribute(network_it, "raw")
+hist(degree(igraph_it, mode = "all"), col="grey", 
+     main = "Grad der Knoten",
+     xlim = c(0, 350), )
+     , xlim=c(0,50),
+     4 + xlab="Vertex Degree", ylab="Frequency", main="")
 
 
 
-
-
-
-
+sum(degree(igraph_it, mode = "all"))
+set.ed
+set.edge.value()
 
 
 
