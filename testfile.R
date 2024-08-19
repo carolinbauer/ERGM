@@ -1,4 +1,0 @@
-#testfile git
-
-#Daten einlesen
-

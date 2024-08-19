@@ -1,0 +1,482 @@
+[
+	{
+		"id": "maletzkeKommunikationswissenschaftImUeberblick1998",
+		"type": "book",
+		"event-place": "Wiesbaden",
+		"ISBN": "978-3-531-13284-6",
+		"language": "de",
+		"note": "DOI: 10.1007/978-3-322-80363-4",
+		"publisher": "VS Verlag für Sozialwissenschaften",
+		"publisher-place": "Wiesbaden",
+		"source": "DOI.org (Crossref)",
+		"title": "Kommunikationswissenschaft im Überblick",
+		"URL": "http://link.springer.com/10.1007/978-3-322-80363-4",
+		"author": [
+			{
+				"family": "Maletzke",
+				"given": "Gerhard"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					4,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1998"
+				]
+			]
+		}
+	},
+	{
+		"id": "burkartKommunikationswissenschaftGrundlagenUnd2021",
+		"type": "book",
+		"collection-number": "2259",
+		"collection-title": "UTB Medien- und Kommunikationswissenschaft",
+		"edition": "6., verbesserte und ergänzte Auflage",
+		"event-place": "Wien Köln",
+		"ISBN": "978-3-8252-5713-2",
+		"language": "de",
+		"number-of-pages": "591",
+		"publisher": "Böhlau Verlag",
+		"publisher-place": "Wien Köln",
+		"source": "K10plus ISBN",
+		"title": "Kommunikationswissenschaft: Grundlagen und Problemfelder einer interdisziplinären Sozialwissenschaft",
+		"title-short": "Kommunikationswissenschaft",
+		"author": [
+			{
+				"family": "Burkart",
+				"given": "Roland"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "wickhamGgplot2ElegantGraphics2016",
+		"type": "book",
+		"ISBN": "978-3-319-24277-4",
+		"publisher": "Springer-Verlag New York",
+		"title": "ggplot2: Elegant Graphics for Data Analysis",
+		"URL": "https://ggplot2.tidyverse.org",
+		"author": [
+			{
+				"family": "Wickham",
+				"given": "Hadley"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "rcoreteamLanguageEnvironmentStatistical2023",
+		"type": "book",
+		"event-place": "Vienna, Austria",
+		"publisher": "R Foundation for Statistical Computing",
+		"publisher-place": "Vienna, Austria",
+		"title": "R: A Language and Environment for Statistical Computing",
+		"URL": "https://www.R-project.org/",
+		"author": [
+			{
+				"literal": "R Core Team"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+	{
+		"id": "BurkartKommunikationswissenschaft",
+		"type": "webpage",
+		"abstract": "Burkart, Kommunikationswissenschaft, 6. verb. und erweiterte Aufl, 2021, Buch, Fachbuch, 978-3-8252-5713-2. Bücher schnell und portofrei",
+		"language": "de",
+		"title": "Burkart | Kommunikationswissenschaft",
+		"URL": "https://www.beck-shop.de/burkart-kommunikationswissenschaft/product/32805671",
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					5,
+					26
+				]
+			]
+		}
+	},
+	{
+		"id": "seisingInformationstheorieFuzzySets2018",
+		"type": "article-journal",
+		"abstract": "This paper shows and interprets some events of the historical development of Information theory that was named “Mathematical theory of communication” by Claude E. Shannon and which was simultaneously developed also by Norbert Wiener. The second historical development in this paper is Computer Sciences which arose as a new university discipline in the 1950s and 1960s. The third historical development that interests in this paper is Lotﬁ A. Zadeh’s mathematical theory of Fuzzy Sets. All three processes formed the path to the “digital turn”. Shannon, Wiener, but also Warren Weaver and some time later Zadeh referred to the “fundamental problem of communication”: Possibly, the sended message will not be received as an exact copy. This problem functioned as one of the “roots”, which led to the foundation of the theory of Fuzzy Sets. The genesis of this mathematical theory was attended by the differentiation of the subject Computer Sciences from Electrical Engineering and Lotﬁ Zadeh was actively involved also in this development. Particularly, Zadeh interpreted scientiﬁc disciplines using the examples Electrical Engineering and Computer Sciences as fuzzy sets and their subjects not as usual elements but objects with a membership value between 0 and 1.",
+		"container-title": "HMD Praxis der Wirtschaftsinformatik",
+		"DOI": "10.1365/s40702-018-0393-y",
+		"ISSN": "1436-3011, 2198-2775",
+		"issue": "3",
+		"journalAbbreviation": "HMD",
+		"language": "de",
+		"page": "472-495",
+		"source": "DOI.org (Crossref)",
+		"title": "Informationstheorie, Fuzzy Sets und Informatik aus wissenschaftshistorischer Perspektive",
+		"URL": "http://link.springer.com/10.1365/s40702-018-0393-y",
+		"volume": "55",
+		"author": [
+			{
+				"family": "Seising",
+				"given": "Rudolf"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					5,
+					29
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "KVKVolltitel",
+		"type": "webpage",
+		"title": "KVK-Volltitel",
+		"URL": "https://kvk.bibliothek.kit.edu/view-title/index.php?katalog=BVB&url=https%3A%2F%2Fwww.gateway-bayern.de%2FBV001235356&signature=oOLU9oTWWloCn2pAT3sldNPGiP-LOsrFd4eX8_iS96w&showCoverImg=1",
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					5,
+					29
+				]
+			]
+		}
+	},
+	{
+		"id": "maletzkePsychologieMassenkommunikation1963",
+		"type": "book",
+		"event-place": "Hamburg",
+		"publisher": "Hans-Bredow-Institut",
+		"publisher-place": "Hamburg",
+		"title": "Psychologie der Massenkommunikation",
+		"author": [
+			{
+				"family": "Maletzke",
+				"given": "Gerhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1963"
+				]
+			]
+		}
+	},
+	{
+		"id": "baduraSprachbarrierenZurSoziologie1973",
+		"type": "book",
+		"collection-number": "1",
+		"collection-title": "Problemata",
+		"edition": "2., verb. Aufl",
+		"event-place": "Stuttgart-Bad Cannstadt",
+		"ISBN": "978-3-7728-0397-0",
+		"language": "ger",
+		"number-of-pages": "196",
+		"publisher": "Frommann-Holzboog",
+		"publisher-place": "Stuttgart-Bad Cannstadt",
+		"source": "K10plus ISBN",
+		"title": "Sprachbarrieren: zur Soziologie der Kommunikation",
+		"title-short": "Sprachbarrieren",
+		"author": [
+			{
+				"family": "Badura",
+				"given": "Bernhard"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1973"
+				]
+			]
+		}
+	},
+	{
+		"id": "prof.dr.marclieschingMedientheorie09Massenmedien2020",
+		"type": "speech",
+		"abstract": "Online-Kurs zur Lehrveranstaltung \"Medientheorie\" (MIB) bzw. \"Kommunikation und Medien\" (BVB), Prof. Dr. Marc Liesching Fakultät Informatik und Medien, HTWK Leipzig",
+		"title": "Medientheorie 09 Massenmedien",
+		"URL": "https://www.youtube.com/watch?v=l1oBrU3OpB0",
+		"author": [
+			{
+				"literal": "Prof. Dr. Marc Liesching"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					5,
+					29
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					4,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "meyenGerhardMaletzkeGeschichte2011",
+		"type": "article-journal",
+		"container-title": "Medien & Kommunikationswissenschaft",
+		"DOI": "10.5771/1615-634x-2011-4-563",
+		"ISSN": "1615-634X",
+		"issue": "4",
+		"journalAbbreviation": "M&K",
+		"language": "de",
+		"page": "563-580",
+		"source": "DOI.org (Crossref)",
+		"title": "Gerhard Maletzke. Eine Geschichte von Erfolg und Misserfolg in der Kommunikationswissenschaft",
+		"URL": "http://www.nomos-elibrary.de/index.php?doi=10.5771/1615-634x-2011-4-563",
+		"volume": "59",
+		"author": [
+			{
+				"family": "Meyen",
+				"given": "Michael"
+			},
+			{
+				"family": "Löblich",
+				"given": "Maria"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					5,
+					29
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "schuetzeichelSoziologischeKommunikationstheorien2004",
+		"type": "book",
+		"abstract": "Wer sich im Rahmen seines Studiums der Soziologie oder der Kommunikationswissenschaft mit dem Thema >Kommunikation< und seinen theoretischen Grundlagen befasst, bekommt in diesem Band einen grundlegenden Überblick. Systematisch werden die wichtigsten soziologischen Theorien unter der Fragestellung analysiert, wie sie Kommunikation konzeptualisieren und was sie zu einer allgemeinen Theorie der Kommunikation beitragen können. Zugleich geht es auch darum, welchen Beitrag die Analyse von Kommunikation für die allgemeine soziologische Theoriebildung leisten kann",
+		"collection-number": "2623",
+		"collection-title": "UTB Soziologie, Medien- und Kommunikationswissenschaft",
+		"event-place": "Konstanz",
+		"ISBN": "978-3-8252-2623-7",
+		"language": "ger",
+		"number-of-pages": "383",
+		"publisher": "UVK Verl.-Ges",
+		"publisher-place": "Konstanz",
+		"source": "K10plus ISBN",
+		"title": "Soziologische Kommunikationstheorien",
+		"author": [
+			{
+				"family": "Schützeichel",
+				"given": "Rainer"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "zotero-290",
+		"type": "document"
+	},
+	{
+		"id": "shannonMathematicalTheoryCommunication1964",
+		"type": "book",
+		"event-place": "Urbana",
+		"language": "en",
+		"publisher": "University of Illinois",
+		"publisher-place": "Urbana",
+		"source": "Zotero",
+		"title": "The Mathematical Theory of Communication",
+		"author": [
+			{
+				"family": "Shannon",
+				"given": "Claude"
+			},
+			{
+				"family": "Weaver",
+				"given": "Warren"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1964"
+				]
+			]
+		}
+	},
+	{
+		"id": "godullaOeffentlicheKommunikationIm2017",
+		"type": "book",
+		"event-place": "Wiesbaden",
+		"ISBN": "978-3-658-14191-2",
+		"language": "de",
+		"note": "DOI: 10.1007/978-3-658-14192-9",
+		"publisher": "Springer Fachmedien",
+		"publisher-place": "Wiesbaden",
+		"source": "DOI.org (Crossref)",
+		"title": "Öffentliche Kommunikation im digitalen Zeitalter",
+		"URL": "http://link.springer.com/10.1007/978-3-658-14192-9",
+		"author": [
+			{
+				"family": "Godulla",
+				"given": "Alexander"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					9,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "fuchs-heinritzLexikonZurSoziologie1994",
+		"type": "book",
+		"event-place": "Wiesbaden",
+		"ISBN": "978-3-531-11417-0",
+		"language": "de",
+		"note": "DOI: 10.1007/978-3-322-91545-0",
+		"publisher": "VS Verlag für Sozialwissenschaften",
+		"publisher-place": "Wiesbaden",
+		"source": "DOI.org (Crossref)",
+		"title": "Lexikon zur Soziologie",
+		"URL": "http://link.springer.com/10.1007/978-3-322-91545-0",
+		"editor": [
+			{
+				"family": "Fuchs-Heinritz",
+				"given": "Werner"
+			},
+			{
+				"family": "Lautmann",
+				"given": "Rüdiger"
+			},
+			{
+				"family": "Rammstedt",
+				"given": "Otthein"
+			},
+			{
+				"family": "Wienold",
+				"given": "Hanns"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					9,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1994"
+				]
+			]
+		}
+	},
+	{
+		"id": "kolaczykStatisticalAnalysisNetwork2020",
+		"type": "book",
+		"collection-title": "Use R!",
+		"event-place": "Cham",
+		"ISBN": "978-3-030-44128-9",
+		"language": "en",
+		"license": "http://www.springer.com/tdm",
+		"note": "DOI: 10.1007/978-3-030-44129-6",
+		"publisher": "Springer International Publishing",
+		"publisher-place": "Cham",
+		"source": "DOI.org (Crossref)",
+		"title": "Statistical Analysis of Network Data with R",
+		"URL": "http://link.springer.com/10.1007/978-3-030-44129-6",
+		"author": [
+			{
+				"family": "Kolaczyk",
+				"given": "Eric D."
+			},
+			{
+				"family": "Csárdi",
+				"given": "Gábor"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					7,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	}
+]
